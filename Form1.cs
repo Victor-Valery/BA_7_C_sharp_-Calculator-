@@ -17,5 +17,49 @@ namespace BA_C_SHARP_7__Calculator_
             InitializeComponent();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double Number_1, Number_2, Result;
+
+            Number_1 = double.Parse(textBox1.Text);
+            Number_2 = double.Parse(textBox2.Text);
+
+            Result = Number_1 + Number_2;
+            textBox3.Text = Result.ToString();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            double Number_1, Number_2, Result;
+
+            Number_1 = double.Parse(textBox1.Text);
+            Number_2 = double.Parse(textBox2.Text);
+
+            Result = Number_1 - Number_2;
+            textBox3.Text = Result.ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            double Number_1, Number_2, Result;
+
+            Number_1 = double.Parse(textBox1.Text);
+            Number_2 = double.Parse(textBox2.Text);
+
+            Result = Number_1 * Number_2;
+            textBox3.Text = Result.ToString();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            double Number_1, Number_2, Result;
+
+            Number_1 = double.Parse(textBox1.Text);
+            Number_2 = double.Parse(textBox2.Text);
+
+            Result = Number_1 / Number_2;
+            textBox3.Text = Result.ToString();
+        }
     }
 }

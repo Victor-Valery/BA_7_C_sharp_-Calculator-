@@ -45,14 +45,14 @@ namespace BA_C_SHARP_7__Calculator_
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(109, 134);
+            this.textBox1.Location = new System.Drawing.Point(109, 34);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(125, 27);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(109, 27);
+            this.textBox2.Location = new System.Drawing.Point(109, 134);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(125, 27);
             this.textBox2.TabIndex = 0;
@@ -114,6 +114,7 @@ namespace BA_C_SHARP_7__Calculator_
             this.button1.TabIndex = 2;
             this.button1.Text = "Addition";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -125,6 +126,7 @@ namespace BA_C_SHARP_7__Calculator_
             this.button2.TabIndex = 2;
             this.button2.Text = "Extraction";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -136,6 +138,7 @@ namespace BA_C_SHARP_7__Calculator_
             this.button3.TabIndex = 2;
             this.button3.Text = "Multiplication";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -147,13 +150,15 @@ namespace BA_C_SHARP_7__Calculator_
             this.button4.TabIndex = 2;
             this.button4.Text = "Division";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ClientSize = new System.Drawing.Size(1000, 531);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(789, 452);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -167,7 +172,8 @@ namespace BA_C_SHARP_7__Calculator_
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Clara\'s Calculator";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "David\'s Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
